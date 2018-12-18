@@ -22,12 +22,12 @@
 <div v-bind:class="{ loading: loading }">
 
 <select required="required" v-model="selected.test1" :disabled="loading == 1">
-  <option disabled value="">Выберите район</option>
+  <option disabled value="">select 1</option>
   <option v-for="district in districts" :value="district.id">{{ district.name }}</option>
 </select>
 
 <select required="required" v-model="selected.test2" :disabled="loading == 1">
-  <option disabled value="">Выберите улицу</option>
+  <option disabled value="">select 2</option>
   <option v-for="district in districts2" :value="district.id">{{ district.name }}</option>
 </select>
 
